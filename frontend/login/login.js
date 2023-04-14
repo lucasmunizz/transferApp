@@ -22,9 +22,9 @@ loginForm.addEventListener('submit', async (event) => {
     }
 
     localStorage.setItem('token', data.token);
-    window.location.href = '../transaction/transactions.html';
+    window.location.href = './transaction/transactions.html';
   } catch (error) {
-    console.error(error);
-    alert('Login failed');
+      console.error(error);
+      alert('Login failed');
   }
 });

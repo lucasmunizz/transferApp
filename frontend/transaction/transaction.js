@@ -11,7 +11,7 @@ form.addEventListener('submit', async (event) => {
 	event.preventDefault();
 	if(!token){
 		alert('Não autenticado, faça login novamente');
-		window.location.href = '../login/login.html'
+		window.location.href = '../index.html'
   	} 
 
 	const senderNumberAccount = document.querySelector('.sender').value;
@@ -26,21 +26,18 @@ form.addEventListener('submit', async (event) => {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `${token}`,
-        // 'mode': 'no-cors'
       },
       body: JSON.stringify({ senderNumberAccount, receiverNumberAccount, type, amount  })
     });
 
-    const data = await response.json();
-
+	    const data = await response.json();
 
 	    if (!response.ok) {
 		    const message = data.message;
 		    alert(message);
 		    return;
     }
-	    console.log(data)
-	//  data.map((res) => {
+	
 	    sucess.innerHTML = `Sua transferência foi realizada com sucesso!`
 	    senderText.innerHTML = `Saldo do emissor: RS ${data.senderBalance.toFixed(2)}`
 	    receiverText.innerHTML = `Saldo do receptor: RS ${data.receiverBalance.toFixed(2)}`
