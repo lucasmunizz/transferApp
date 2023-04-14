@@ -13,7 +13,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [TypeScript](https://www.typescriptlang.org/)
 - [JsonWebToken](https://jwt.io/)
 
-<p>Para realizar o teste, optei por utilizar Typescript como linguagem de programação, com o auxílio de frameworks como o Express para criar a API. Postgres como banco de dados relacional e JsonWebToken como maneira de autenticação</p>
+<p>Para realizar o teste, optei por utilizar Typescript como linguagem de programação, com o auxílio de frameworks como o Express para criar a API. Postgres como banco de dados relacional e JsonWebToken como maneira de autenticação.</p>
 
 ### Descrição
 
