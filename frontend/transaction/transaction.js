@@ -21,7 +21,7 @@ form.addEventListener('submit', async (event) => {
 
 
   try {
-    const response = await fetch('http://localhost:3000/transaction/', {
+    const response = await fetch('https://api-transfer-app.cyclic.app/transaction/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
