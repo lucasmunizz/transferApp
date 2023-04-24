@@ -1,4 +1,4 @@
-# Turing-Itaú
+# Transfer APP
 
 <p align="center">Aplicação de transferências entre contas</p>
 
@@ -13,17 +13,18 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [TypeScript](https://www.typescriptlang.org/)
 - [JsonWebToken](https://jwt.io/)
 
-<p>Para realizar o teste, optei por utilizar Typescript como linguagem de programação, com o auxílio de frameworks como o Express para criar a API. Postgres como banco de dados relacional e JsonWebToken como maneira de autenticação.</p>
+<p>Optei por utilizar Typescript como linguagem de programação, com o auxílio de frameworks como o Express para criar a API. Postgres como banco de dados relacional e JsonWebToken como maneira de autenticação.</p>
 
 ### Descrição
 
 <p>A aplicação funciona da seguinte maneira: O usuário faz o login como admin (é possível se cadastrar também), após isso é gerado um token de autenticação armazenado no Storage do navegador. No script, é feita uma verificação do token onde só é possível seguir para a página de transações se o token for válido.</p>
 <p> Na página de transações, o usuário irá informar o número da conta do emissor, do receptor (informações dos campos estará no final do readme para utilizar a aplicação), o valor e o tipo da transferência.
+<p> Além disso, as transações seguem algumas regras de valores próprios para PIX, TED ou DOC.
   
 
 ### Como utilizar a aplicação?
   
-<p>Para facilitar os testes, realizei o deploy da aplicação, que pode ser acessada em: <b>https://extraordinary-gumption-bf4f38.netlify.app</b>
+<p>Realizei o deploy da aplicação, que pode ser acessada em: <b>https://extraordinary-gumption-bf4f38.netlify.app</b>
 <p>A primeira tela será a de login, onde pode acessar a aplicação usando uma conta de admin.
   
 
